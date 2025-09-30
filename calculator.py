@@ -1,10 +1,10 @@
 from mcp.server.fastmcp import FastMCP
 
 
-mcp = FastMCP("math")
+mcp=FastMCP("math")
 
 @mcp.tool()
-def add(a:int , b:int)->int:
+def add(a:int,b:int)->int:
     """_summary_
 
     Args:
@@ -14,11 +14,11 @@ def add(a:int , b:int)->int:
     Returns:
         int: _description_
     """
-    return a + b
+    return a+b
 
 
 @mcp.tool()
-def multiply(a:int , b:int)->int:
+def multiply(a:int,b:int)->int:
     """_summary_
 
     Args:
@@ -28,7 +28,7 @@ def multiply(a:int , b:int)->int:
     Returns:
         int: _description_
     """
-    return a * b
+    return a*b
 
 if __name__=="__main__":
     mcp.run(transport="stdio")

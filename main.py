@@ -1,7 +1,5 @@
 def main():
-    print("Hello from mcp-liveclass!")
-
-
+    print("Hello from mcptutorial!")
 
 
 if __name__ == "__main__":

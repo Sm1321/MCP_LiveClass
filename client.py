@@ -42,8 +42,7 @@ async def main():
         {"messages": [{"role": "user", "content": "what's (3 + 5) x 12?"}]}
     )
     
-    print(response[-1].content)
-
+    print(response['messages'][-1].content)
 
 
 asyncio.run(main())
